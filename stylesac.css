@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+/*Service*/
+.activity {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.activity h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #ff8177 0%, 
+    #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 
+    100%);
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.activity__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.activity__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 100%
+        ),
+    url("/images/talk.png");
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.activity__card:nth-child(2) {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 100%
+        ),
+    url('images/sa.jpg');
+}
+
+.activity__card:nth-child(3) {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 100%
+        ),
+    url('images/ac/302245446_5489291014472155_3914675738333753951_n.jpg');
+}
+.activity__card:nth-child(4) {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 100%
+        ),
+    url('images/ac/dsasad.jpg');
+}
+.activity__card:nth-child(5) {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 100%
+        ),
+    url('images/ac/6.png');
+}
+.activity__card:nth-child(6) {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 100%
+        ),
+    url('images/ac/7.png');
+}
+.activity__card:nth-child(7) {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 100%
+        ),
+    url('images/ac/8.png');
+}
+.activity__card:nth-child(8) {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 100%
+        ),
+    url('images/ac/5.jpg');
+}
+.activity h2 {
+    position: absolute;
+    top: 300px;
+    left: 30px;
+}
+
+.activity__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.activity__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px; 
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.activity__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .activity {
+        height: 1600px;
+    }
+
+    .activity h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .activity {
+        height: 1400px;
+    }
+
+    .activity h1 {
+        font-size: 12rem;
+    }
+
+    .activity__card {
+        width: 300px;
+    }
+}
